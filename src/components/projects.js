@@ -1,98 +1,63 @@
 import React, { Component } from 'react';
-import { Tabs,  Tab, Grid, Cell, Card, CardTitle, CardActions, CardMenu, Button, IconButton, CardText } from 'react-mdl';
+import Footer from './footer';
+import './css/main.css';
+import Project1 from './img/projects/project1.jpg';
+import Project2 from './img/projects/project2.jpg';
+import Project3 from './img/projects/project3.jpg';
+import Project4 from './img/projects/project4.jpg';
+import Project5 from './img/projects/project5.jpg';
 
 class Projects extends Component {
-    constructor(props){
-        super(props);
-        this.state = {activeTab: 0};
-    }
-
-    toggleCategories() {
-        if(this.state.activeTab === 0){
-            return(
-
-                <div className="projects-grid">
-                {/* Project 1 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png) center / cover'}}> React Project #1</CardTitle>
-                    <CardText>
-                        Lorem Ipsum
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Github</Button>
-                        <Button colored>Codepen</Button>
-                        <Button colored>LiveDemo</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                 {/* Project 2 */}
-                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png) center / cover'}}> React Project #1</CardTitle>
-                    <CardText>
-                        Lorem Ipsum
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Github</Button>
-                        <Button colored>Codepen</Button>
-                        <Button colored>LiveDemo</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                 {/* Project 3 */}
-                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png) center / cover'}}> React Project #1</CardTitle>
-                    <CardText>
-                        Lorem Ipsum
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Github</Button>
-                        <Button colored>Codepen</Button>
-                        <Button colored>LiveDemo</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-                </div>
-            )
-        } else if(this.state.activeTab === 1) {
-            return (
-                <div><h1>This is Angular</h1></div>
-            )
-        }  else if(this.state.activeTab === 2) {
-            return (
-                <div><h1>This is VueJS</h1></div>
-            )
-        }  else if(this.state.activeTab === 3) {
-            return (
-                <div><h1>This is MongoDB</h1></div>
-            )
-        } 
-    }
-
     render(){
         return(
-            <div className="category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
-                    <Tab>React</Tab>
-                    <Tab>Angular</Tab>
-                    <Tab>VueJS</Tab>
-                    <Tab>MongoDB</Tab>
-                </Tabs>
-
-                
-                <Grid>
-                    <Cell col={12}>
-                        <div className="content">{this.toggleCategories()}</div>
-                    </Cell>
-                </Grid>
+          <body id="bg-img">
+            <div>
+            <main id="work">
+            <h1 className="lg-heading">My <span className="text-secondary">Work</span></h1>
+            <h2 className="sm-heading">
+              Check out some of my projects...
+            </h2>
+            <div className="projects">
+              <div className="item">
+                <a href="#!">
+                  <img src={Project1} alt="project1" />
+                </a>
+                <a href="#!" className="btn-light"><i className="fas fa-eye"></i>Project</a>
+                <a href="#!" className="btn-dark"><i className="fab fa-github"></i>Github</a>
+              </div>
+              <div className="item">
+                <a href="#!">
+                  <img src={Project2} alt="project2" />
+                </a>
+                <a href="#!" className="btn-light"><i className="fas fa-eye"></i>Project</a>
+                <a href="#!" className="btn-dark"><i className="fab fa-github"></i>Github</a>
+              </div>
+              <div className="item">
+                <a href="#!">
+                  <img src={Project3} alt="project3" />
+                </a>
+                <a href="#!" className="btn-light"><i className="fas fa-eye"></i>Project</a>
+                <a href="#!" className="btn-dark"><i className="fab fa-github"></i>Github</a>
+              </div>
+              <div className="item">
+                <a href="#!">
+                  <img src={Project4} alt="project4" />
+                </a>
+                <a href="#!" className="btn-light"><i className="fas fa-eye"></i>Project</a>
+                <a href="#!" className="btn-dark"><i className="fab fa-github"></i>Github</a>
+              </div>
+              <div className="item">
+                <a href="#!">
+                  <img src={Project5} alt="project5" />
+                </a>
+                <a href="#!" className="btn-light"><i className="fas fa-eye"></i>Project</a>
+                <a href="#!" className="btn-dark"><i className="fab fa-github"></i>Github</a>
+              </div>
             </div>
+          </main>
+          <Footer />
+          </div>
+          </body>
         )
     }
 }
