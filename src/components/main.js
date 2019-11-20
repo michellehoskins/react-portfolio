@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import LandingPage from './landingpage';
 import AboutMe from './aboutme';
 import Projects from './projects';
+import './css/main.css';
 
 const Main = () => (
     

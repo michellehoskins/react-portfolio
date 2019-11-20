@@ -11,10 +11,10 @@ $background-opacity: 0.9;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background-image: $home-image;
+      background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-      
+
       &:after {
         content: '';
         position: absolute;
