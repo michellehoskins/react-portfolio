@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import Toolbar from './components/Toolbar/Toolbar';
-import SideDrawer from './components/SideDrawer/SideDrawer'
-import Backdrop from './components/Backdrop/Backdrop'
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
 import Main from './components/main';
 
 
@@ -16,7 +16,7 @@ class App extends Component {
     });
   };
 
-  backdropClickHander = () => {
+  backdropClickHandler = () => {
     this.setState({sideDrawerOpen: false});
   };
 
@@ -28,7 +28,7 @@ class App extends Component {
     }
     return (
     <div style={{height: '100%'}}>
-      <Toolbar drawerClickHander={this.drawerToggleClickHandler} />
+      <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
       <SideDrawer show={this.state.sideDrawerOpen} />
       {backdrop}
       <Main style={{marginTop: '64px'}}/>
