@@ -5,11 +5,13 @@ import AboutMe from './aboutme';
 import Projects from './projects';
 
 const Main = () => (
+    
     <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/aboutme" component={AboutMe} />
         <Route path="/projects" component={Projects} />
     </Switch>
+    
 )
 
 

@@ -9,7 +9,7 @@
 }
 
 .toolbar__navigation{
-    position: flex;
+    display: flex;
     height: 100%;
     align-items: center;
     padding: 0 1rem;
@@ -23,6 +23,11 @@
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+.toolbar__logo a:hover,
+.toolbar__logo a:active{
+    color:#fa923f;
 }
 
 .spacer {
@@ -45,8 +50,8 @@
     text-decoration: none;
 }
 
-.toolbar__navigation a:hover
-.toolbar__navigation a:active {
+.toolbar__navigation-items a:hover,
+.toolbar__navigation-items a:active {
     color:#fa923f;
 }
 
@@ -57,7 +62,7 @@
 }
 
 @media (min-width: 769px) {
-    .toolbar__toggle-buton {
+    .toolbar__toggle-button {
         display: none;
     }
 
