@@ -19,7 +19,7 @@ class About extends Component {
                   Biography
                 </h3>
                 <p>
-                  Accomplished in HTML, CSS, SASS, Javascript, PHP, Node.js, React.js, Express, MySQL, MongoDB, GitHub, BitBucket, Version Control, and Email Development
+                  Accomplished in Adobe PS, HTML, CSS, SASS, Javascript, PHP, Node.js, React.js, Express, MySQL, MongoDB, GitHub, BitBucket, Version Control, and Email Development
                 </p>
               </div>
 
@@ -41,7 +41,7 @@ class About extends Component {
           <h3>Freelancer</h3>
           <h6>HTML E-mail Developer</h6>
           <p>
-            I create eye-catching and creative responsive emails. Can fit in any client's request. Flexible and attentive to detail.
+            I create eye-catching and creative responsive emails. Convert PSDs to HTML/CSS. Any client's request can be fufilled. Flexible and attentive to detail.
           </p>
         </div>
       </div>
