@@ -6,10 +6,9 @@ import './css/main.css';
 class Landing extends Component {
     render(){
         return(
-          <body id="bg-img">
-            <div>
-           <main id="home">
-                <h1 className="lg-heading">
+            <div id="bg-img">
+              <main id="home" >
+                <h1 className="lg-heading" id="myName">
                   Michelle <span className="text-secondary">Williams</span>
                 </h1>
                 <h2 className="sm-heading">
@@ -24,7 +23,6 @@ class Landing extends Component {
                 </main>
             <Footer />
             </div>
-            </body>
         )
     }
 }

@@ -154,6 +154,11 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 8;
 }
 
 @import 'mobile';

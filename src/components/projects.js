@@ -10,8 +10,7 @@ import Project5 from './img/projects/project5.jpg';
 class Projects extends Component {
     render(){
         return(
-          <body id="bg-img">
-            <div>
+            <div id="bg-img">
             <main id="work">
             <h1 className="lg-heading">My <span className="text-secondary">Work</span></h1>
             <h2 className="sm-heading">
@@ -57,7 +56,6 @@ class Projects extends Component {
           </main>
           <Footer />
           </div>
-          </body>
         )
     }
 }

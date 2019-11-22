@@ -3,17 +3,25 @@
     .projects {
       grid-template-columns: repeat(4, 1fr);
     }
-  }
-  
-  // Desktops & Laptops
-  @include mediaLg {
-    .projects {
-      grid-template-columns: repeat(3, 1fr);
+
+    .bio-image {
+      width: 70%;
     }
   }
   
-  //Tablets and Small Laptops
-  @include mediaMd {
+// Desktops & Laptops
+@include mediaLg {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bio-image {
+      width: 70%;
+    }
+  }
+  
+//Tablets and Small Laptops
+@include mediaMd {
     main {
       align-items: center;
       text-align: center;
@@ -22,6 +30,11 @@
         line-height: 1;
         margin-bottom: 1rem;
       }
+    }
+
+    .bio-image {
+      justify-content: center;
+      width: 65%;
     }
   
     .about-info {
@@ -49,12 +62,27 @@
     }
 
     .lg-heading {
-      margin-top:1rem;
-      font-size: 5rem;
+      margin-top:2rem;
+      font-size: 4rem;
     }
-  }
   
     .projects {
       grid-template-columns: 1fr;
     }
+
+    .bio-image {
+      justify-content: center;
+      width: 65%;
+    }
+
+    #main-footer{
+      width: 100%;
+    }
+
+    #myName {
+      justify-content: center;
+    }
   }
+  }
+
+  

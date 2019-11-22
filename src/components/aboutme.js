@@ -6,62 +6,48 @@ import Photo2 from './img/Moi.jpg';
 class About extends Component {
     render(){
         return(
-          <body id="bg-img">
-            <div>
-                 <main id="about">
-      <h1 className="lg-heading">About <span className="text-secondary">Me</span></h1>
-      <h2 className="sm-heading">
-        Let me tell you a few
-      </h2>
-      <div className="about-info">
-        <img src={Photo2} alt="Jon Doe" className="bio-image" />
-        <div className="bio">
-          <h3 className="text-secondary">
-            BIO
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-            doloremque nam. Sed illum consectetur vero, nulla ad odio saepe ipsa
-            culpa? Voluptatem fuga, expedita eius inventore pariatur sequi
-            doloribus voluptatum!
-          </p>
-        </div>
+            <div id="bg-img">
+              <main id="about">
+                <h1 className="lg-heading">About <span className="text-secondary">Me</span></h1>
+                <h2 className="sm-heading">
+                  Let me tell you a few
+                </h2>
+              <div className="about-info">
+                <img src={Photo2} alt="Michelle Williams" className="bio-image" />
+              <div className="bio">
+                <h3 className="text-secondary">
+                  Biography
+                </h3>
+                <p>
+                  Accomplished in HTML, CSS, SASS, Javascript, PHP, Node.js, React.js, Express, MySQL, MongoDB, GitHub, BitBucket, Version Control, and Email Development
+                </p>
+              </div>
 
         <div className="job job-1">
-          <h3>123 Webshop</h3>
-          <h6>Full Stack Developer</h6>
+          <h3>Case Western Reserve University</h3>
+          <h6>Full Stack Web Developer Bootcamp</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            numquam quisquam unde repudiandae blanditiis aliquid asperiores
-            reprehenderit mollitia, praesentium, non officiis illum iure
-            explicabo deserunt hic? Ea nisi animi voluptatibus?
+            It was a 6 month development bootcamp. We received a solid background in HTML, CSS, and Javascript before diving into the MERN stack. Built real projects with real people.
           </p>
         </div>
         <div className="job job-2">
-          <h3>Designers ABC</h3>
-          <h6>Front End Developer</h6>
+          <h3>my360e</h3>
+          <h6>Software Developer</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            numquam quisquam unde repudiandae blanditiis aliquid asperiores
-            reprehenderit mollitia, praesentium, non officiis illum iure
-            explicabo deserunt hic? Ea nisi animi voluptatibus?
+            We create enterprise level software for contractors. Built with the CakePHP framework.
           </p>
         </div>
         <div className="job job-3">
-          <h3>Webworks</h3>
-          <h6>Graphic Designer</h6>
+          <h3>Freelancer</h3>
+          <h6>HTML E-mail Developer</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            numquam quisquam unde repudiandae blanditiis aliquid asperiores
-            reprehenderit mollitia, praesentium, non officiis illum iure
-            explicabo deserunt hic? Ea nisi animi voluptatibus?
+            I create eye-catching and creative responsive emails. Can fit in any client's request. Flexible and attentive to detail.
           </p>
         </div>
       </div>
     </main>
     <Footer />
             </div>
-            </body>
         )
     }
 }
