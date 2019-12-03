@@ -4,21 +4,24 @@
 }
 
 body {
-  background: #444444;
-  color: #ffffff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
-body#bg-img {
+#bg-img {
+  background: #444444;
+  color: #ffffff;
+}
+
+#bg-img#bg-img {
   background: url("../img/background.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
-body#bg-img:after {
+#bg-img#bg-img:after {
   content: '';
   position: absolute;
   top: 0;

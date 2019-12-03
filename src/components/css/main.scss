@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+main{
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
@@ -51,10 +51,10 @@ main {
 
     a {
       padding: 0.4rem;
+      @include easeOut();
 
       &:hover {
         color: $secondary-color;
-        @include easeOut();
       }
     }
   }
