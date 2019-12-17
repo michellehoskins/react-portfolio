@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Footer from './footer';
 import './css/main.css';
-import Photo2 from './img/Moi.jpg';
+import Photo2 from './img/moi2.jpg';
 
 class About extends Component {
     render(){
@@ -10,7 +10,7 @@ class About extends Component {
               <main id="about">
                 <h1 className="lg-heading">About <span className="text-secondary">Me</span></h1>
                 <h2 className="sm-heading">
-                  Let me tell you a few
+                  A little about me...
                 </h2>
               <div className="about-info">
                 <img src={Photo2} alt="Michelle Williams" className="bio-image" />
