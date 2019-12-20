@@ -18,7 +18,7 @@ export class FormDetails extends Component {
     Contact me...
   </h2>
 <div className="about-info">
-  <form>
+  {/* <form>
      <input
         name="name"
         type="text"
@@ -35,11 +35,11 @@ export class FormDetails extends Component {
         defaultValue={values.name}
      />
      <br/>
-     <textarea>
+     <textarea
         name="message"
         onChange={handleChange('message')}
         value={values.name}
-    </textarea>
+    />
      <br/>
      <button>
         label="Continue"
@@ -47,7 +47,7 @@ export class FormDetails extends Component {
         style={styles.button}
         onClick={this.continue}
     </button>
-    </form>
+    </form> */}
 </div>
 </main>
 <Footer />
