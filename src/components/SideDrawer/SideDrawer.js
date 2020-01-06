@@ -2,22 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SideDrawer.css';
 
-const sideDrawer = props => {
-    let drawerClasses = 'side-drawer';
-    if (props.show) {
-        drawerClasses = 'side-drawer open';
-    }
+function SideDrawer ({ isOpen, setIsOpen }) {
+    const links = [
+        {to: "./aboutme", title: "About"},
+        {to: "./projects", title: "Projects"},
+        {to: "./contact", title: "Contact"},
+        {to: "./blog", title: "Blog"}
+    ];
 
     return(
-        <nav className={drawerClasses}>
+        <nav className={`side-drawer ${isOpen ? 'open' : '' }`}>
             <ul>
-                <li><Link to="./aboutme">About</Link></li>
-                <li><Link to="./projects">Projects</Link></li>
-                <li><Link to="./contact">Contact</Link></li>
-                <li><Link to="./blog">Blog</Link></li>
+                {links.map(linkItem => <DrawerLink onOpen={() => setIsOpen(false)} link={linkItem} />)}
             </ul>
         </nav>
     );
-};
+}
 
-export default sideDrawer
+function DrawerLink({onOpen, link}) {
+    const {to, title } = link;
+    return <Link onClick={() => onOpen()} to={to}>{title}</Link>
+}
+
+export default SideDrawer

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Footer from './footer';
-import './css/main.css';
-import Project1 from './img/projects/project1.jpg';
-import Project2 from './img/projects/project2.jpg';
-import Project3 from './img/projects/project3.jpg';
-import Project4 from './img/projects/project4.jpg';
-import Project5 from './img/projects/project5.jpg';
+import Footer from '../Footer';
+import Project1 from '../img/projects/project1.jpg';
+import Project2 from '../img/projects/project2.jpg';
+import Project3 from '../img/projects/project3.jpg';
+import Project4 from '../img/projects/project4.jpg';
+import Project5 from '../img/projects/project5.jpg';
 
 class Projects extends Component {
     render(){
@@ -14,7 +13,7 @@ class Projects extends Component {
             <main id="work">
             <h1 className="lg-heading">My <span className="text-secondary">Work</span></h1>
             <h2 className="sm-heading">
-              Check out some of my projects...
+              Check out some of my projects
             </h2>
             <div className="projects">
               <div className="item">

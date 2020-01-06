@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Footer from './footer';
-import './css/main.css';
-import Photo2 from './img/moi2.jpg';
+import Footer from '../Footer';
+import Photo2 from '../img/moi2.jpg';
 
 class About extends Component {
     render(){
@@ -10,7 +9,7 @@ class About extends Component {
               <main id="about">
                 <h1 className="lg-heading">About <span className="text-secondary">Me</span></h1>
                 <h2 className="sm-heading">
-                  A little about me...
+                  A little about me
                 </h2>
               <div className="about-info">
                 <img src={Photo2} alt="Michelle Williams" className="bio-image" />
@@ -19,7 +18,7 @@ class About extends Component {
                   Biography
                 </h3>
                 <p>
-                  Accomplished in Adobe PS, HTML, CSS, SASS, Javascript, PHP, Node.js, React.js, Express, MySQL, MongoDB, GitHub, BitBucket, Version Control, and Email Development
+                  Accomplished in Email Development, Adobe PS, HTML, CSS, SASS, Javascript, PHP, MySQL, Node.js, Express, MongoDB, GitHub, BitBucket, and Version Control.
                 </p>
               </div>
 

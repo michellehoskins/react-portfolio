@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Footer from './footer';
-import './css/main.css';
+import Footer from '../Footer';
 
 class Blog extends Component {
     render(){
         return(
             <div id="bg-img">
               <main id="contact">
-                <h1 className="lg-heading">Blog</h1>
+                <h1 className="lg-heading">My <span className="text-secondary">Blog</span></h1>
                 <h2 className="sm-heading">
                   My Blog
                 </h2>

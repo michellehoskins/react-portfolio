@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Footer from './footer';
-import './css/main.css';
-
+import Footer from '../Footer';
 
 class Landing extends Component {
     render(){
@@ -12,7 +10,7 @@ class Landing extends Component {
                   Michelle <span className="text-secondary">Williams</span>
                 </h1>
                 <h2 className="sm-heading">
-                  Web Developer, Programmer, Designer & Entrepreneur
+                  Web Developer
                 </h2>
                 <div className="icons">
                   <a href="https://twitter.com/MMWilli51510569" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter fa-2x"></i></a>
