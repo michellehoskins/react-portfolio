@@ -5,12 +5,17 @@
 }
 
 main{
-  @include background;
-  background: $primary-color;
+  background: url(../img/background.jpg);
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -124,6 +129,38 @@ main {
   }
 }
 
+//Contact Form
+.myform {
+  padding: 20px;
+  .formgroup {
+    padding-bottom: 15px;
+  }
+  label {
+    display: block;
+  }
+  input[type="text"], input[type="email"], textarea {
+  padding: 15px;
+  width: 96.5%;
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+  }
+  textarea {
+    height: 200px;
+  }
+  .button {
+    background-color: $primary-color;
+    background: $primary-color;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 12pt;
+    border: solid #666666;
+    font-weight: normal;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
 // Button Styles
 .btn {
   display: block;
@@ -149,6 +186,7 @@ main {
 }
 
 #main-footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 2rem;
   background: darken($primary-color, 10);
@@ -160,5 +198,6 @@ main {
   overflow: hidden;
   z-index: 8;
 }
+
 
 @import 'mobile';

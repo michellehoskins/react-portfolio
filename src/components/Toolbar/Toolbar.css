@@ -5,6 +5,7 @@
     width: 100%;
     background: #521751;
     height: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -27,7 +28,7 @@
 
 .toolbar__logo a:hover,
 .toolbar__logo a:active{
-    color:#fa923f;
+    color:#eece1a;;
 }
 
 .spacer {
@@ -52,7 +53,7 @@
 
 .toolbar__navigation-items a:hover,
 .toolbar__navigation-items a:active {
-    color:#fa923f;
+    color:#eece1a;;
 }
 
 @media (max-width: 768px) {

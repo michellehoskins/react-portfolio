@@ -3,33 +3,19 @@
           box-sizing: border-box;
 }
 
-body {
+main {
+  background: url(../img/background.jpg);
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-}
-
-#bg-img {
-  background: #444444;
-  color: #ffffff;
-}
-
-#bg-img#bg-img {
-  background: url("../img/background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#bg-img#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(68, 68, 68, 0.8);
 }
 
 h1,
@@ -73,12 +59,12 @@ main .icons {
 
 main .icons a {
   padding: 0.4rem;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 main .icons a:hover {
   color: #eece1a;
-  -webkit-transition: all 0.75s ease-out;
-  transition: all 0.75s ease-out;
 }
 
 main#home {
@@ -155,8 +141,45 @@ main#home h1 {
 .projects img:hover {
   opacity: 0.5;
   border-color: #eece1a;
-  -webkit-transition: all 0.75s ease-out;
-  transition: all 0.75s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.myform {
+  padding: 20px;
+}
+
+.myform .formgroup {
+  padding-bottom: 15px;
+}
+
+.myform label {
+  display: block;
+}
+
+.myform input[type="text"], .myform input[type="email"], .myform textarea {
+  padding: 15px;
+  width: 96.5%;
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+}
+
+.myform textarea {
+  height: 200px;
+}
+
+.myform .button {
+  background-color: #444444;
+  background: #444444;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 12pt;
+  border: solid #666666;
+  font-weight: normal;
+}
+
+.myform .button:hover {
+  color: #eece1a;
 }
 
 .btn, .btn-dark, .btn-light {
@@ -182,8 +205,9 @@ main#home h1 {
 }
 
 #main-footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   background: #2b2b2b;
   color: #ffffff;
   height: 60px;
